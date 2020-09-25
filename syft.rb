@@ -7,11 +7,11 @@ class Syft < Formula
 
   if OS.mac?
     url "https://github.com/anchore/syft/releases/download/v0.1.0-beta.5/syft_0.1.0-beta.5_darwin_amd64.tar.gz"
-    sha256 "f670ad2e26eda0a9efffca9fa144d7965a6addf80e65ec1c56410852a50ee3a9"
+    sha256 "c79cb5ac132206957af856b825cf552df38f737ea1b46692f7a85cbca8738d05"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/anchore/syft/releases/download/v0.1.0-beta.5/syft_0.1.0-beta.5_linux_amd64.tar.gz"
-      sha256 "612c4cd10d9db99924a04e1baa6d1bae82036cff69e3844c62d814930cad0a97"
+      sha256 "85b91613b144abe378b23548ce2ec66aa02f9c052c345bd30a43762024ee6c39"
     end
   end
 

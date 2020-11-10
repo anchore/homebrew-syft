@@ -5,13 +5,8 @@ class Syft < Formula
   version "0.6.0"
   bottle :unneeded
 
-  if OS.mac?
-  elsif OS.linux?
-    if Hardware::CPU.intel?
-      url "https://github.com/anchore/syft/releases/download/v0.6.0/syft_0.6.0_linux_amd64.tar.gz"
-      sha256 "da352884fd1758936042991fb9417a1cab8115a53d99bdc38fdb01661a5b99db"
-    end
-  end
+  url "https://github.com/anchore/syft/releases/download/v0.6.0/syft_0.6.0_darwin_amd64.dmg"
+  sha256 "2a4ec0e6981e319ef6a13b14dc094b756c9e0fb73583defa3b3e91a7005fcb4c"
 
   def install
     bin.install "syft"

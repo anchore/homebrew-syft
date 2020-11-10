@@ -6,6 +6,8 @@ class Syft < Formula
   bottle :unneeded
 
   if OS.mac?
+    url "https://github.com/anchore/syft/releases/download/v0.6.0/syft_0.6.0_darwin_amd64.dmg"
+    sha256 "2a4ec0e6981e319ef6a13b14dc094b756c9e0fb73583defa3b3e91a7005fcb4c"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/anchore/syft/releases/download/v0.6.0/syft_0.6.0_linux_amd64.tar.gz"

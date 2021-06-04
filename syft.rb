@@ -5,16 +5,16 @@
 class Syft < Formula
   desc "A tool that generates a Software Bill Of Materials (SBOM) from container images and filesystems"
   homepage "https://github.com/anchore/syft"
-  version "0.16.1"
+  version "0.17.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/anchore/syft/releases/download/v0.16.1/syft_0.16.1_darwin_amd64.zip"
-    sha256 "f280f962fe37307670061cde97161ea54c393081d9a4cb3372aa4f5a79211afe"
+    url "https://github.com/anchore/syft/releases/download/v0.17.0/syft_0.17.0_darwin_amd64.zip"
+    sha256 "c017efbcfa6fc8157bc1ef2f08fe77ac0658e66d0c1a8389bc093edd05a2a287"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/anchore/syft/releases/download/v0.16.1/syft_0.16.1_linux_amd64.tar.gz"
-    sha256 "53b35589ca2149540e3fba6be4aded8fb65a566010fcb13a6b967013465c8e36"
+    url "https://github.com/anchore/syft/releases/download/v0.17.0/syft_0.17.0_linux_amd64.tar.gz"
+    sha256 "05f363e33a49d113fbd01ec55b56b9e7a4d92216ba621cdfd7d5055d9a4d9d99"
   end
 
   def install

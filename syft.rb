@@ -11,7 +11,7 @@ class Syft < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/anchore/syft/releases/download/v0.26.0/syft_0.26.0_darwin_amd64.zip"
-      sha256 "680b6cb86ba45fa7add340c78dcd7e45c5966c0f036f75a9c7a526bce307f4c2"
+      sha256 "d90e564843eda3394a3b66f34f8528ec7c55b46978940edd265a48850e0c8c33"
     end
   end
 

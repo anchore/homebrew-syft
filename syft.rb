@@ -5,20 +5,28 @@
 class Syft < Formula
   desc "A tool that generates a Software Bill Of Materials (SBOM) from container images and filesystems"
   homepage "https://github.com/anchore/syft"
-  version "0.27.0"
+  version "0.28.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/syft/releases/download/v0.27.0/syft_0.27.0_darwin_amd64.zip"
-      sha256 "9fa16d13917ec87ce9b2bb02e2d90b5ad8df379d9d38265be47286a915a1ce0a"
+      url "https://github.com/anchore/syft/releases/download/v0.28.0/syft_0.28.0_darwin_amd64.zip"
+      sha256 "51f4d6ef0b3f1b3562eb44a8c62d5cb608ea7dc7e07bcf6ce3d4930d7d0f7cea"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/anchore/syft/releases/download/v0.28.0/syft_0.28.0_darwin_arm64.zip"
+      sha256 "a6e160dd9d545447972394d0c6023e6165e5cfdaeea2a507c547e2881532ef66"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/syft/releases/download/v0.27.0/syft_0.27.0_linux_amd64.tar.gz"
-      sha256 "fb9c7622c382cc3b64dc32ab2ca7c5b669a55084e425fbf499fb8dfd6dfa0286"
+      url "https://github.com/anchore/syft/releases/download/v0.28.0/syft_0.28.0_linux_amd64.tar.gz"
+      sha256 "100a9b0816ab924eb7af337f70f06dc9cc12d8be10aae504cd91b9c1db0daec9"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/anchore/syft/releases/download/v0.28.0/syft_0.28.0_linux_arm64.tar.gz"
+      sha256 "a040d22dae6b09906e2e0f3d99cb70c8203ba0ff914e4cea59d88713be662b8f"
     end
   end
 

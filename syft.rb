@@ -6,7 +6,6 @@ class Syft < Formula
   desc "A tool that generates a Software Bill Of Materials (SBOM) from container images and filesystems"
   homepage "https://github.com/anchore/syft"
   version "0.33.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

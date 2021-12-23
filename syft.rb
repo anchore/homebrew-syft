@@ -18,7 +18,7 @@ class Syft < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/anchore/syft/releases/download/v0.34.0/syft_0.34.0_darwin_amd64.zip"
-      sha256 "0521b6a49e43ba2b78513ce8a3a87947b49a18cf0ff9fcc7524712cc99e86b1f"
+      sha256 "052915bde04071ec5e60ad20181ff74f9c72d474a857164560a3c7b40dd4a832"
 
       def install
         bin.install "syft"

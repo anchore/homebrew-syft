@@ -7,7 +7,6 @@ class Syft < Formula
   homepage "https://github.com/anchore/syft"
   version "0.36.0"
   license "Apache License 2.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

@@ -11,7 +11,7 @@ class Syft < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/anchore/syft/releases/download/v0.41.4/syft_0.41.4_darwin_amd64.tar.gz"
-      sha256 "422f55c61eff1eefa0c2b4e0341dec1d57ee8a2f82de59225a899bbcc12b698d"
+      sha256 "2a2e5001172f8af07368f8fc44e19e0ae3c304bdf93f7f487b84c6ff7a2cabda"
 
       def install
         bin.install "syft"
@@ -19,7 +19,7 @@ class Syft < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/anchore/syft/releases/download/v0.41.4/syft_0.41.4_darwin_arm64.tar.gz"
-      sha256 "1da57fb403307e1f6668f74e0da31edc688fa7b17d11c98163767808c603eeaf"
+      sha256 "8fb2d5cb439f1868bac8a006077cf7e0ed79d78770e66aa1e6a82401138c1829"
 
       def install
         bin.install "syft"

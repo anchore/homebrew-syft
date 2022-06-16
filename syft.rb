@@ -5,21 +5,21 @@
 class Syft < Formula
   desc "A tool that generates a Software Bill Of Materials (SBOM) from container images and filesystems"
   homepage "https://github.com/anchore/syft"
-  version "0.48.0"
+  version "0.48.1"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/syft/releases/download/v0.48.0/syft_0.48.0_darwin_amd64.tar.gz"
-      sha256 "4521a99a1ea1d7a4167a5878b874546a37a0e2da61c35b0a009dd0e2641bc215"
+      url "https://github.com/anchore/syft/releases/download/v0.48.1/syft_0.48.1_darwin_amd64.tar.gz"
+      sha256 "f40bb26bbda608ec894297a5050a2bc80eb0f4acceb088fb94de4a04573ed1b5"
 
       def install
         bin.install "syft"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anchore/syft/releases/download/v0.48.0/syft_0.48.0_darwin_arm64.tar.gz"
-      sha256 "2a34332b0b715052b06d883b2b53bca3fb0ae1ea12edad0aa33ec81a2886037c"
+      url "https://github.com/anchore/syft/releases/download/v0.48.1/syft_0.48.1_darwin_arm64.tar.gz"
+      sha256 "e6b62b9bcc26e0e6e45cb8e4a719ca48ceddc723589a131d216f0b95cb1e5d05"
 
       def install
         bin.install "syft"
@@ -28,17 +28,17 @@ class Syft < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anchore/syft/releases/download/v0.48.0/syft_0.48.0_linux_arm64.tar.gz"
-      sha256 "ccf056e86db09912a8d7f9955f6f108508ef6c216eca098b8fe78fc51798f59e"
+    if Hardware::CPU.intel?
+      url "https://github.com/anchore/syft/releases/download/v0.48.1/syft_0.48.1_linux_amd64.tar.gz"
+      sha256 "5db9b2aed3d3beff2e64a07da1b186ff36ac930c30b4da87e80f9116e5988544"
 
       def install
         bin.install "syft"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/anchore/syft/releases/download/v0.48.0/syft_0.48.0_linux_amd64.tar.gz"
-      sha256 "801dc524483277782bd4651b3bec8e0a2efdcc0e0791f67cd2dd5bb8edce5c9a"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/anchore/syft/releases/download/v0.48.1/syft_0.48.1_linux_arm64.tar.gz"
+      sha256 "d69a0deb77ea4bff6bb9222a39b219aadf0c54cb139a3c864c17d20d51f672cd"
 
       def install
         bin.install "syft"

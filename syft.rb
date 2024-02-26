@@ -5,21 +5,21 @@
 class Syft < Formula
   desc "A tool that generates a Software Bill Of Materials (SBOM) from container images and filesystems"
   homepage "https://github.com/anchore/syft"
-  version "0.105.0"
+  version "0.105.1"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/anchore/syft/releases/download/v0.105.0/syft_0.105.0_darwin_arm64.tar.gz"
-      sha256 "bfb0ea27bff3f89135f9159765ee896a5cb4d562c2d2b0af5451e8ba7999d97a"
+      url "https://github.com/anchore/syft/releases/download/v0.105.1/syft_0.105.1_darwin_arm64.tar.gz"
+      sha256 "445020fb7a6cd2f93c2f6a4c03273495e026e68b59b2018dd44c42e378e12794"
 
       def install
         bin.install "syft"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/syft/releases/download/v0.105.0/syft_0.105.0_darwin_amd64.tar.gz"
-      sha256 "2ac536bdca551055e24a2c381afc95a2a8b391aeceed0062f24a3d0a1e6c8fd3"
+      url "https://github.com/anchore/syft/releases/download/v0.105.1/syft_0.105.1_darwin_amd64.tar.gz"
+      sha256 "c0d9a60a78545774fa0a52b67c825fa632ff7538c992b5a2a1f2ee8753aee765"
 
       def install
         bin.install "syft"
@@ -29,16 +29,16 @@ class Syft < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anchore/syft/releases/download/v0.105.0/syft_0.105.0_linux_arm64.tar.gz"
-      sha256 "c8bb8ad81d6f3e1c5e9d75111ae08158506d1fd1fa4b253a22f7280aef3bec01"
+      url "https://github.com/anchore/syft/releases/download/v0.105.1/syft_0.105.1_linux_arm64.tar.gz"
+      sha256 "eaf059dc2d816b1e994ab9ba98fcea2dcf0f261767c75757103ef1f51ec44889"
 
       def install
         bin.install "syft"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/syft/releases/download/v0.105.0/syft_0.105.0_linux_amd64.tar.gz"
-      sha256 "6f9b5d7047c33d40609fe00b181f2510049f1ca32f1cbaa4cd34b8a567e41f03"
+      url "https://github.com/anchore/syft/releases/download/v0.105.1/syft_0.105.1_linux_amd64.tar.gz"
+      sha256 "6a1b8a734a0939799239ba067895a7bc5ad57ac73c91bb197bed4d1d1705fbb1"
 
       def install
         bin.install "syft"

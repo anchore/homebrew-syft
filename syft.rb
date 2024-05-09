@@ -5,21 +5,21 @@
 class Syft < Formula
   desc "A tool that generates a Software Bill Of Materials (SBOM) from container images and filesystems"
   homepage "https://github.com/anchore/syft"
-  version "1.3.0"
+  version "1.4.0"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/syft/releases/download/v1.3.0/syft_1.3.0_darwin_amd64.tar.gz"
-      sha256 "9ca5945824ee610a6d2cbc034e518c48a956e175001f6747c5867afdc38d38f4"
+      url "https://github.com/anchore/syft/releases/download/v1.4.0/syft_1.4.0_darwin_amd64.tar.gz"
+      sha256 "235ec3197f15fb4f3cb509ef519b7281de7a1f4a5e43f9ade691791b31a6c44d"
 
       def install
         bin.install "syft"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anchore/syft/releases/download/v1.3.0/syft_1.3.0_darwin_arm64.tar.gz"
-      sha256 "4e68515226429697e6475c9af6c10269edd597e603e8f86e942420da814b47bd"
+      url "https://github.com/anchore/syft/releases/download/v1.4.0/syft_1.4.0_darwin_arm64.tar.gz"
+      sha256 "ecf2aa6c922fba65c9ecd9b5774770468e9bf083a4759fdc87e3a68733f1b677"
 
       def install
         bin.install "syft"
@@ -29,16 +29,16 @@ class Syft < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/anchore/syft/releases/download/v1.3.0/syft_1.3.0_linux_amd64.tar.gz"
-      sha256 "9124b3e75b7d0beebcf9dbfd12d9e13e92a1951c7a9fb74100db08f379e49ea4"
+      url "https://github.com/anchore/syft/releases/download/v1.4.0/syft_1.4.0_linux_amd64.tar.gz"
+      sha256 "b6c940a0ebc79840d1dd4049d481e0d7b7ea8b70a70ff9b4d10408ea226da9e9"
 
       def install
         bin.install "syft"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anchore/syft/releases/download/v1.3.0/syft_1.3.0_linux_arm64.tar.gz"
-      sha256 "2bdd6ddd32b4947cea7a4f1e90e769a27e8e0dd2ad6ef3b29e48b57fc43090c6"
+      url "https://github.com/anchore/syft/releases/download/v1.4.0/syft_1.4.0_linux_arm64.tar.gz"
+      sha256 "7cb482f7d7fc3fe8bc4d25673f17d5e4b81ac43a73e746f1862085276f523931"
 
       def install
         bin.install "syft"
